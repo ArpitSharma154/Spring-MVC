@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
@@ -40,4 +41,19 @@ public class HomeController {
 		System.out.println("About called");
 		return "about";
 	}
+	
+	//modelandview implementation
+	@RequestMapping("/help")
+	public ModelAndView help()
+	{
+		//creating model and view object
+		ModelAndView modelAndView = new ModelAndView();
+		//setting the data
+		modelAndView.addObject("name", "Arpit");
+		//setting the page name
+		modelAndView.setViewName("help");
+		//name of view
+		return modelAndView;
+	}
+	
 }
