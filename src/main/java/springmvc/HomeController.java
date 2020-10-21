@@ -50,6 +50,15 @@ public class HomeController {
 		ModelAndView modelAndView = new ModelAndView();
 		//setting the data
 		modelAndView.addObject("name", "Arpit");
+		// integere list 
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(12);
+		list.add(13);
+		list.add(14);
+		list.add(15);
+		list.add(16);
+		
+		modelAndView.addObject("nos",list);
 		//setting the page name
 		modelAndView.setViewName("help");
 		//name of view
