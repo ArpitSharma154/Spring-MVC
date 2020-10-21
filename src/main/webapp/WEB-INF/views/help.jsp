@@ -10,7 +10,6 @@
 <title>Help Page</title>
 </head>
 <body>
-<h1>help called</h1>
 
 <% String name = (String)request.getAttribute("name"); %>
 
