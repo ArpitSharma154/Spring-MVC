@@ -36,7 +36,8 @@ public class LoginController {
 		// adding reference to model and sending to view	
 		if(user.getEmail().equals("abc@abc.com") && user.getPassword().equals("1234"))
 		{
-			return "Success";
+			//return "Success";
+			return  "redirect:/todoForm";
 		}
 		else
 		{
